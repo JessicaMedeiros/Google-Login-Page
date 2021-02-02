@@ -62,7 +62,7 @@ text-align: center;
 
 
 
-/* Input e Box fazem o CSS do Input */
+/* Input e Box fazem o CSS do Input Text */
 .input{
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -89,7 +89,7 @@ text-align: center;
     margin-top: 0px;
 }
 
-/*Seção com informações sobre segurança */
+/*Seção com texto de informação sobre segurança */
 .securityLearnMoreSection{
     padding-bottom: 3px;
     padding-top: 9px;
