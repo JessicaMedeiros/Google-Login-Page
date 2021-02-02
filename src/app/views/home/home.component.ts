@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Country } from "../../country";
-import { CountryserviceService } from "../../countryservice.service";
+import { Language } from "../../language";
+import { LanguageService } from "../../language.service";
 
 
 @Component({
@@ -9,12 +9,12 @@ import { CountryserviceService } from "../../countryservice.service";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  countries: Country[];
+  languages: Language[];
   
   constructor(
-      private service: CountryserviceService,
+      private service: LanguageService,
 
-  ) { this.countries = this.service.getCountries();   }
+  ) { this.languages = this.service.getLanguages();   }
 
   
   ngOnInit(): void {

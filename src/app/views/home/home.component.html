@@ -43,10 +43,10 @@
 
   <div class="footer">
     <mat-form-field class="select">
-      <mat-label>United States of America</mat-label>
+      <mat-label>Choose a country</mat-label>
       <mat-select name="countries" class="select">
-        <mat-option *ngFor="let country of countries" [value]="country.id">
-          {{country.name}}
+        <mat-option *ngFor="let language of languages" [value]="language.id">
+          {{language.name}}
         </mat-option>
       </mat-select>
     </mat-form-field>

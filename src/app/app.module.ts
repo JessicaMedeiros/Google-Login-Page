@@ -12,12 +12,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
-import { CountryserviceService } from "./countryservice.service";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
+import { LanguageService } from './language.service';
 
 
 @NgModule({
@@ -48,10 +48,12 @@ import { HomeComponent } from './views/home/home.component';
     MatCardModule, 
     MatChipsModule,
     MatDatepickerModule,
-    MatButtonToggleModule, MatExpansionModule, MatGridListModule
+    MatButtonToggleModule, 
+    MatExpansionModule, 
+    MatGridListModule
   ],
-  providers: [
-    CountryserviceService
+  providers: [ 
+    LanguageService
   ],
   bootstrap: [AppComponent]
 })
