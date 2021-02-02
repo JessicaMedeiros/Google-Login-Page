@@ -1,0 +1,62 @@
+<div class="wrapper">
+ 
+  <div class="container">
+   
+    <mat-card-title>
+       <img alt="xxx" class="logo" src="assets/icon.png">
+    </mat-card-title>
+    <mat-card-title>
+      <div class="signin">Sign in</div>
+    </mat-card-title>
+    <mat-card-title>
+      <div class="useYourGoogleAccount">Use your Google Account</div>
+    </mat-card-title>
+
+    <form class="box">
+      <mat-form-field class="input" appearance="outline">
+        <mat-label>Email or phone</mat-label>
+        <input matInput placeholder="Placeholder">
+      </mat-form-field>
+    </form>
+
+    <div><a class="forgotEmail" mat-flat-button routerLink=".">Forgot email?</a> </div>
+
+    <mat-card-title class="securityLearnMoresection">
+      <div class="titleSecurity">Not your computer? Use Guest mode to sign in privately.</div>
+      <a class="linkLearnMore" mat-flat-button routerLink=".">Learn more</a>
+    </mat-card-title>
+
+    <div> </div>
+
+    <div class="createAccountandSignInSection">
+     
+      <button mat-button class="createAccountButton" routerLinkActive="createAccountButtonActive" [matMenuTriggerFor]="menu">Create account</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>For myself</button>
+        <button mat-menu-item>To manage my business</button>
+      </mat-menu>
+
+      <button mat-stroked-button class="button">Next</button>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <mat-form-field class="select">
+      <mat-label>United States of America</mat-label>
+      <mat-select name="countries" class="select">
+        <mat-option *ngFor="let country of countries" [value]="country.id">
+          {{country.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="buttonFooterDiv"> 
+      <a mat-flat-button class="buttonFooter" href="https://www.google.com/" target="_blank">Help</a>
+      <a mat-flat-button class="buttonFooter" href="https://www.google.com/" target="_blank">Privacy</a>
+      <a mat-flat-button class="buttonFooter" href="https://www.google.com/" target="_blank">Terms</a>
+    </div>
+
+  </div>
+
+</div>
